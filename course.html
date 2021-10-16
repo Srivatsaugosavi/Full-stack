@@ -1,0 +1,40 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<label>enter the name</label>
+<input type="text" id="name"><br>
+<label>select the course u enrolled</label><br>C
+<input type="checkbox" id="c"><br>C++
+<input type="checkbox" id="cpp"><br>C#
+<input type="checkbox" id="csharp"><br>JAVA
+<input type="checkbox" id="java">
+<button onclick="course()">submit</button>
+</body>
+<script type="text/javascript">
+function course(){
+var str="name:"
+var name=document.getElementById("name")
+var c=document.getElementById("c")
+var cpp=document.getElementById("cpp")
+var csharp=document.getElementById("csharp")
+var java=document.getElementById("java")
+str+=name.value
+str+="  course enrolled:"
+if(c.checked){
+str+=" c"
+}
+if(cpp.checked){
+str+=" cpp"
+}
+if(csharp.checked){
+str+=" c#"
+}
+if(java.checked){
+str+=" java"
+}
+alert(str)
+}
+</script>
+</html>

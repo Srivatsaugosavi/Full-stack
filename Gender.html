@@ -1,0 +1,16 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<input type="radio" name="gender" value="male" id="male">male<br>
+<input type="radio" name="gender" value="female" id="female">female<br>
+<button onclick="a()">submit</button>
+</body>
+<script type="text/javascript">
+function a(){
+var male=document.getElementById("male")
+var female=document.getElementById("female")
+if(male.checked==true){alert("male")} else if(female.checked){alert("female")}else{alert("select correct option")}}
+</script>
+</html>
